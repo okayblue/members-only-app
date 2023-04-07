@@ -2,7 +2,7 @@
 
 <% @posts.each do |post| %>
   <%= render post %>
-  <%= link_to "Show this post". post %>
+  <%= link_to "Show this post", post %>
 <% end %>
 <hr>
 <%= link_to "New post", new_post_path %>

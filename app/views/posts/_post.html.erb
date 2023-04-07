@@ -1,0 +1,17 @@
+<div>
+  <p>
+    <h2><%= post.title %></h2>
+  </p>
+
+  <p>
+    <%= post.body %>
+  </p>
+
+  <% if user_signed_in? %>
+  <p>
+    Posted by:
+    <%= post.user.username %>
+  </p>
+  <% end %>
+
+  </div>
